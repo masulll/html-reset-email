@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999.xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reset Password</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          const currentYear = new Date().getFullYear();
+          const copyrightElement = document.getElementById("copyright");
+          if (copyrightElement) {
+              copyrightElement.innerHTML = `&copy; ${currentYear} Binar Academy, All rights reserved`;
+          }
+
+          const clientData ={
+              email:'binarlabs@gmail.co.id',
+              url: "https://www.google.com",
+            }
+
+          const emailElement= document.getElementById("email");
+          emailElement.innerHTML = `<a href="mailto:${clientData.email}" style="color: #009DB1; text-decoration: none;"> ${clientData.email} </a>`
+
+          const clientUrl = document.getElementById('dynamic-url');
+          clientUrl.href= clientData.url;
+
+
+
+      });
+
+
+  </script>
+
+    <style type="text/css">
+
+      @font-face {
+        font-family: "Causten-Regular";
+        src: url('assets/font/Causten-Regular.ttf') format('truetype');
+  
+      }
+      @font-face {
+        font-family: "Causten-Semi-Bold";
+        src: url('./assets/font/Causten-Semi-Bold.ttf') format('truetype');
+    
+  
+      }
+      @font-face {
+        font-family: "Causten-Bold";
+        src: url('./assets/font/Causten-Bold.ttf') format('truetype');
+  
+      }
+
+      body {
+        margin: 0;
+        background-color: #cccccc;
+      }
+      table {
+        border-spacing: 0;
+      }
+      td {
+        padding: 0;
+      }
+      img {
+        border: 0;
+      }
+
+      .styled-text{
+        color: #0A0A0A;
+        font-family: 'Causten-Regular';
+        font-size: 16px;
+        font-weight: 400;
+        word-wrap: break-word;
+
+      }
+      .wrapper {
+        width: 100%;
+        table-layout: fixed;
+        background-color: #cccccc;
+        padding-bottom: 60px;
+      }
+
+      .main {
+        background-color: #ffffff;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 600px;
+        border-spacing: 0;
+        font-family: sans-serif;
+        color: #171a1b;
+      }
+
+      .two-columns {
+        text-align: center;
+        font-size: 0;
+      }
+
+      .two-columns .column {
+        width: 100%;
+        max-width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+      }
+
+      .button-primary{
+        display: flex;
+        height:  52px;
+        max-width: 480px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex-shrink: 0;
+        text-decoration: none;
+        background-color: #933393;
+        color: #fff;
+        border-radius: 4px;
+        text-align: center;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+
+        
+      
+      }
+
+      .button-primary:hover{
+        background-color: #933393db;
+        transition: all ease-in-out 0.3s;
+          
+        }
+      
+    </style>
+  </head>
+  <body>
+    <center class="wrapper">
+      <table class="main" width="100%">
+        <!-- logo section -->
+        <tr>
+          <td>
+            <table width="100%">
+              <tr>
+                <td class="two-columns">
+                  <table class="column">
+                    <tr>
+                      <td style="padding: 40px 20px 8px">
+                        <a href="/">
+                          <img
+                            src="assets/img/Logo Binar.svg"
+                            alt=""
+                            width="280"
+                            height="60"
+                          />
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- title text button -->
+
+                  <tr>
+                    <table width="100%">
+                    <td style="padding: 0px 40px 40px;text-align: center; ">
+                      <p style=" font-size:24px; font-family: Causten-Semi-Bold">Permintaan Reset Password</p>
+                        <div class="styled-text" >
+                            <p>Halo, <span id="email" class="email"></span> </p>
+                            <p style="margin: -15px 0px 0px;">Kami telah menerima permintaan reset password untuk akun Binar Anda.Untuk melanjutkan, silakan klik tombol reset password di bawah ini:</p>
+                        </div>
+                       
+                    </td>
+                  </tr>
+                  <!-- button -->
+                  <tr>
+                    <table width="100%">
+                    <td style="padding: 0px 60px 60px;text-align: center;">
+                        <a href="/" target="_blank" class="button-primary" id="dynamic-url" class="dynamic-url">Reset Password</a>
+                       
+                    </td>
+                  </tr>
+                  <!-- footer -->
+                  <tr>
+                    <table width="100%">
+                    <td style="padding: 0px 40px 40px;">
+                        <div style="text-align: left;"class="styled-text">
+
+                            <p>Link reset password akan kadarluarsa dalam waktu <span><b>30 menit</b></span> 
+                            </p>
+                            <p>Jika anda kesulitan mengklik tombol “Reset Password”, anda bisa salin dan tempel URL berikut ini ke web browser anda. Link  <a target="_blank" href="https://www.binaracademy.com/" style="text-decoration: none; color: #933393;" ><b>URL Reset Password</b></a></p>
+        
+                            <p>Regards,<br> Tim Binar Academy</p>
+                        </div>
+                          
+                        <p id="copyright" style="text-align: center; font-size: 14px; color: #000; font-family: Causten-Regular;"></p>
+                       
+                    </td>
+                  </tr>
+                </table>
+
+                </td>
+              </tr>
+                 
+                </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>
